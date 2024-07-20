@@ -1,56 +1,55 @@
 import "./App.css";
-// import Notifications from './components/Notifications'
 import useNotification from "./hooks/use-notification";
 
 function App() {
   // custom hooks
   const { notificationComponent, triggerNotification } =
-    useNotification("top-left");
+    useNotification("bottom-right");
   return (
     <div className="tostButtons">
       <button
         onClick={() =>
           triggerNotification({
             type: "success",
-            customMessage: "Message Sent Success Fully",
+            customMessage: "Toast Success...",
             duration: 3000,
           })
         }
       >
-        Tost Success
+        Toast Success
       </button>
       <button
         onClick={() =>
           triggerNotification({
             type: "error",
-            customMessage: "Message Sent Fail",
+            customMessage: "Toast Error...",
             duration: 3000,
           })
         }
       >
-        Tost Error
+        Toast Error
       </button>
       <button
         onClick={() =>
           triggerNotification({
             type: "info",
-            customMessage: "INFO BRO",
+            customMessage: "Toast INFO...",
             duration: 3000,
           })
         }
       >
-        Tost Error
+        Toast Error
       </button>
       <button
         onClick={() =>
           triggerNotification({
             type: "warning",
-            customMessage: "Warning bro",
+            customMessage: "Toast Warning..",
             duration: 3000,
           })
         }
       >
-        Tost Error
+        Toast Error
       </button>
       {notificationComponent}
     </div>
