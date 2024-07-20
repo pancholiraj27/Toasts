@@ -21,5 +21,5 @@ The React Notification System is a flexible and easy-to-use notification compone
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/react-notification-system.git
-   cd react-notification-system
+   git clone https://github.com/yourusername/Toasts.git 
+   cd Toasts
