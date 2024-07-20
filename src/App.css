@@ -1,0 +1,26 @@
+.tostButtons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: auto;
+}
+
+.tostButtons button {
+  width: 40%;
+  margin: 10px;
+  padding: 12px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .tostButtons {
+    width: 80%;
+    height: 90vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tostButtons button {
+    width: 100%;
+  }
+}
