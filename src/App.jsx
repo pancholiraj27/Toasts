@@ -4,14 +4,14 @@ import useNotification from "./hooks/use-notification";
 function App() {
   // custom hooks
   const { notificationComponent, triggerNotification } =
-    useNotification("bottom-right");
+    useNotification("top-left");
   return (
     <div className="tostButtons">
       <button
         onClick={() =>
           triggerNotification({
             type: "success",
-            customMessage: "Toast Success...",
+            customMessage: "Toast Success....",
             duration: 3000,
           })
         }
@@ -33,12 +33,12 @@ function App() {
         onClick={() =>
           triggerNotification({
             type: "info",
-            customMessage: "Toast INFO...",
+            customMessage: "Toast Info...",
             duration: 3000,
           })
         }
       >
-        Toast Error
+        Toast Info
       </button>
       <button
         onClick={() =>
@@ -49,7 +49,7 @@ function App() {
           })
         }
       >
-        Toast Error
+        Toast Warning
       </button>
       {notificationComponent}
     </div>
